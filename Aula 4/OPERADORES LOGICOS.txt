@@ -1,0 +1,37 @@
+algoritmo "Operadores Lógicos"
+var
+      A, B, C: Inteiro
+inicio
+        Escreval(verdadeiro e verdadeiro)//verdadeiro
+        Escreval(verdadeiro e falso)//falso
+        Escreval(falso e verdadeiro)//falso
+        Escreval(falso e falso)//falso
+        
+        Escreval(verdadeiro ou verdadeiro)//verdadeiro
+        Escreval(verdadeiro ou falso)//verdadeiro
+        Escreval(falso ou verdadeiro)//verdadeiro
+        Escreval(falso ou falso)//falso
+        
+        Escreval(nao(verdadeiro))//falso
+        Escreval(nao(falso))//verdadeiro
+
+        A <- 2
+        B <- 3
+        C <- 5
+        
+        Escreval((A<>B) e (B>A))//verdadeiro
+        Escreval((A<B) e (B=A))//falso
+        Escreval((C=B-A) e (C>B))//falso
+        Escreval((A=B*C) e (A=C+B))//falso
+        
+        Escreval((C=A+B) ou (A=C-B))//verdadeiro
+        Escreval((B<=C) ou (C<>A+B))//verdadeiro
+        Escreval((B>C) ou (B<C))//verdadeiro
+        Escreval((A<>C-B) ou (B<=C+A))//falso
+        
+        Escreval(nao(C=A+B))//falso
+        Escreval(nao(C=B-A))//verdadeiro
+        
+        
+
+fimalgoritmo
