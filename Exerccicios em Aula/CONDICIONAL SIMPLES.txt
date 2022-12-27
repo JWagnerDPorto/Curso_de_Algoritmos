@@ -1,0 +1,15 @@
+algoritmo "Condicional Simples"
+
+var
+   ano, nasc, idade: inteiro
+inicio
+       Escreva("Em que ano estamos? ")
+       Leia(ano)
+       Escreva("Em que ano estamos? ")
+       leia(nasc)
+       idade <- ano - nasc
+        Escreva("Em ", ano, " você tera ", idade, " anos, ")
+       Se (idade >= 18) entao
+        Escreval("e já terá atingido a maioridade. ")
+       FimSe
+fimalgoritmo
