@@ -1,0 +1,21 @@
+algoritmo "Exercicio 2 (Aula 7)"
+var
+       nota1, nota2, media: real
+inicio
+        Escreval("------------------------")
+        Escreval(" ESCOLA JAVALI CANSADO")
+        Escreval("------------------------")
+        Escreva("Primeira Nota: ")
+        Leia(nota1)
+        Escreva("Segunda Nota: ")
+        Leia(nota2)
+        Escreval("------------------------")
+        media <- (nota1 + nota2) / 2
+        Escreval(" MEDIA :", media:3:1)
+        Se (media >= 7) entao
+            Escreval(" ALUNO APROVADO ")
+        SeNao
+            Escreval(" ALUNO REPROVADO ")
+        FimSe
+        Escreval("------------------------")
+fimalgoritmo
