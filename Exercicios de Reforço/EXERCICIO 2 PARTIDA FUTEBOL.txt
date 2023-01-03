@@ -1,0 +1,28 @@
+algoritmo "Exercicio 2 Partida Futebol"
+var
+      GB, GM, Dif: Inteiro
+inicio
+         Escreval ("--------------------------------")
+         Escreval ("       BANGU X MADUREIRA        ")
+         Escreval ("--------------------------------")
+         Escreva ("Quantos gols do BANGU? ")
+         Leia (GB)
+         Escreva ("Quantos gols do MADUREIRA? ")
+         Leia (GM)
+         Escreval ("--------------------------------")
+         Se (GB > GM) entao
+            Dif <- GB - GM
+         SeNao
+            Dif <- GM - GB
+         FimSe
+         Escreval ("DIFERENÇA:",Dif)
+         Escolha Dif
+                Caso 0
+                     Escreval ("EMPATE")
+                Caso 1,2,3,4
+                     Escreval ("NORMAL")
+                OutroCaso
+                     Escreval ("GOLEADA")
+         FimEscolha
+         
+fimalgoritmo
