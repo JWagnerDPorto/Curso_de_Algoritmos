@@ -1,0 +1,27 @@
+algoritmo "ContagemInteligente"
+var
+   NI, NF: Inteiro
+inicio
+      Escreval ("--------------------------")
+      Escreval ("   CONTAGEM INTELIGENTE   ")
+      Escreval ("--------------------------")
+      Escreva ("Início: ")
+      Leia (NI)
+      Escreva ("Fim: ")
+      Leia (NF)
+      Escreval ("--------------------------")
+      Escreval ("     C O N T A N D O      ")
+      Escreval ("--------------------------")
+      Se (NI < NF) entao
+         Enquanto (NI <= NF) faca
+                  Escreva (NI,".., ")
+                  NI <- NI + 1
+         FimEnquanto
+      SeNao (NI > NF) entao
+         Enquanto (NI >= NF) faca
+                  Escreva (NI,".., ")
+                  NI <- NI - 1
+         FimEnquanto
+      FimSe
+
+fimalgoritmo
