@@ -1,0 +1,31 @@
+algoritmo "Exercicio 1 (Aula 10)"
+var
+   Cont, N: Inteiro
+inicio
+   Escreval("=================")
+   Escreval("|     MENU      |")
+   Escreval("=================")
+   Escreval("| [1] De 1 a 10 |")
+   Escreval("| [2] De 10 a 1 |")
+   Escreval("| [3] Sair      |")
+   Escreval("=================")
+   Leia(N)
+   Escolha N
+          Caso 1
+               Cont <- 1
+               Enquanto Cont <= 10 faca
+                    Escreva(Cont,".. ")
+                    Cont <- Cont + 1
+               FimEnquanto
+          Caso 2
+               Cont <- 10
+               Enquanto Cont >= 1 faca
+                    Escreva(Cont,".. ")
+                    Cont <- Cont - 1
+               FimEnquanto
+          Caso 3
+               Escreva("SAINDO.. ")
+   FimEscolha
+          
+   
+fimalgoritmo
