@@ -1,0 +1,31 @@
+algoritmo "semnome"
+var
+   C, N, V, S, D5, Nu, P: Inteiro
+   M: Real
+inicio
+      N <- 1
+      D5 <- 0
+      Nu <- 0
+      Para C <- 1 ate 5 faca
+      Escreva("Digite o", N, "o valor: ")
+      Leia(V)
+             Se (V % 5 = 0) entao
+                D5 <- D5 + 1
+             FimSe
+             Se (V = 0) entao
+                Nu <- Nu + 1
+             FimSe
+             Se (V % 2 = 0) entao
+                P <- V + P
+             FimSe
+      S <- V + S
+      N <- N + 1
+      FimPara
+      M <- S / 5
+      
+      Escreval("A soma entre os valores: ",S)
+      Escreval("A media entre os valores: ",M)
+      Escreval("Valores divisiveis por cinco: ",D5)
+      Escreval("Valores nulos: ",Nu)
+      Escreval("A soma dos valores pares é: ",P)
+fimalgoritmo
