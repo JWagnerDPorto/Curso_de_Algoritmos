@@ -1,0 +1,35 @@
+algoritmo "Exercicio 2 (Aula 12)"
+var
+   Contador, Ordinal, Valor, Soma, Dividir_5, Numero_Nulo, Par: Inteiro
+   Media: Real
+   Procedimento Condicao( var Valor: Inteiro)
+   Inicio
+         Se (Valor % 5 = 0) entao
+                Dividir_5 <- Dividir_5 + 1
+             FimSe
+             Se (Valor = 0) entao
+                Numero_Nulo <- Numero_Nulo + 1
+             FimSe
+             Se (Valor % 2 = 0) entao
+                Par <- Valor + Par
+         FimSe
+   FimProcedimento
+inicio
+      Ordinal <- 1
+      Dividir_5 <- 0
+      Numero_Nulo <- 0
+      Para Contador <- 1 ate 5 faca
+      Escreva("Digite o", Ordinal, "o valor: ")
+      Leia(Valor)
+      Condicao(Valor)
+      Soma <- Valor + Soma
+      Ordinal <- Ordinal + 1
+      FimPara
+      Media <- Soma / 5
+
+      Escreval("A soma entre os valores: ",Soma)
+      Escreval("A media entre os valores: ",Media)
+      Escreval("Valores divisiveis por cinco: ",Dividir_5)
+      Escreval("Valores nulos: ",Numero_Nulo)
+      Escreval("A soma dos valores pares é: ",Par)
+fimalgoritmo

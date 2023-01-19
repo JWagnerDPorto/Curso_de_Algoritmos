@@ -1,0 +1,36 @@
+algoritmo "Exercicio 1 (Aula 12)"
+var
+   ano_atual, ano_nasc, idade: inteiro
+   Condicao: Caractere
+   procedimento topo()
+   inicio
+      Escreval("--------------------------")
+      Escreval(" DEPARTAMENTO DE TRANSITO")
+      Escreval("--------------------------")
+   FimProcedimento
+inicio
+
+      Condicao <- ("S")
+      Enquanto (Condicao = "S") faca
+         topo()
+         Escreva("Ano Atual (yyyy): ")
+         Leia(ano_atual)
+         Escreva("Ano de Nascimento (yyyy): ")
+         Leia(ano_nasc)
+         Escreval
+         Escreval("--------STATUS--------")
+         idade <- ano_atual - ano_nasc
+         Escreval("IDADE:", idade," ANOS")
+             Se( idade >= 18) entao
+                 Escreval("APTO A TIRAR CARTEIRA")
+             Senao
+                 Escreval("INAPTO A TIRAR CARTEIRA")
+             FimSe
+         Escreval("----------------------")
+         Escreval("Deseja continuar? [S/N}")
+         Leia(Condicao)
+         LimpaTela
+      FimEnquanto
+
+
+fimalgoritmo
